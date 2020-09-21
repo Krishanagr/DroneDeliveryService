@@ -1,0 +1,36 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="header :: copy"></head>
+
+<body>
+	<h1>Delivery Details</h1>
+
+	<dl class="dl-horizontal">
+		
+		<dt style="text-align: left;width:35%">Customer Name & Address</dt>
+		<dd th:text="${cust.name}+': '+ ${cust.address} +'		Lat:'+ ${cust.latitude}+'	Long:'+${cust.longitude}">Address</dd>
+		<dt style="text-align: left;width:35%">Store Address</dt>
+		<dd th:text="${del.store.address} +'		Lat:'+ ${del.store.latitude}+'	Long:'+ ${del.store.longitude}">Address</dd>
+		<dt style="text-align: left;width:35%">Drone Address</dt>
+		<dd th:text="${del.drone.address} +'	Lat:'+ ${del.drone.latitude}+'	Long:'+${del.drone.longitude}">Address</dd>
+		<dt style="text-align: left;width:35%">Distance from Drone Depot to Store</dt>
+		<dd th:text="${del.distStoreToDrone} + ' meters'">Number</dd>
+		<dt style="text-align: left;width:35%">Travel Time from Drone Depot to Store*</dt>
+		<dd th:text="${del.travelTimeStoreToDrone} + ' secs'">Address</dd>
+		<dt style="text-align: left;width:35%">Distance from Store to Customer Address</dt>
+		<dd th:text="${del.distCustToStore} + ' meters'">Number</dd>
+		<dt style="text-align: left;width:35%">Travel Time from Store to Customer Address*</dt>
+		<dd th:text="${del.travelTimeCustToStore} + ' secs'">Address</dd>
+		<dt style="text-align: left;width:35%">Shortest distance and delivery time</dt>
+		<dd th:text="${del.totalTravelDistance}+ ' in ' + ${del.totalTravelTime} ">Number</dd>
+	</dl>
+
+	<div style="height: 2cm">&nbsp;
+		*Assumption Drone velocity: 60km/h
+	</div>
+
+	<div th:replace="footer :: copy"></div>
+</body>
+</html>

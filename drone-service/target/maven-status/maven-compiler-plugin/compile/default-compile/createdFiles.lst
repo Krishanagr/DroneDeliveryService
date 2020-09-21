@@ -1,0 +1,6 @@
+com\dda\drones\services\DBConfiguration.class
+com\dda\drones\server\DronesServiceApplication.class
+com\dda\drones\services\DroneUtils.class
+com\dda\drones\services\Drone.class
+com\dda\drones\services\DroneRepository.class
+com\dda\drones\services\DronesController.class

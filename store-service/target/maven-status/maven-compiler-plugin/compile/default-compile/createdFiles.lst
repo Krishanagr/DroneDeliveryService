@@ -1,0 +1,6 @@
+com\dda\store\server\StoreServiceApplication.class
+com\dda\store\services\StoreRepository.class
+com\dda\store\services\DBConfiguration.class
+com\dda\store\services\StoreController.class
+com\dda\store\services\Store.class
+com\dda\store\services\StoreUtils.class

@@ -1,0 +1,32 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="header :: copy"></head>
+
+<body>
+
+	<h1>Microservices - Web Server</h1>
+	<h3>Overview</h3>
+	<ul>
+		<li>Simple web-application for delivering goods from 
+		store to customer addresses using drones from drone's depot.</li>
+		<li>All the information is fetched via a RESTful
+			interface of Drone, Store, Customer microservices.</li>
+	</ul>
+
+	<h3>The Demo</h3>
+
+	<ul class="openlist">
+		<li> Click on below:</li>
+		<li>Get All Customer Locations : <a th:href="@{/customer/all}">Get List</a></li>
+		
+		<li>Eureka Dashboard: <a
+			href="http://localhost:8761">http://localhost:8761</a></li>
+		<li>Check applications registered: <a
+			href="http://localhost:8761/eureka/apps/">http://localhost:8761/eureka/apps/</a></li>
+	</ul>
+	<div th:replace="footer :: copy"></div>
+
+</body>
+</html>
