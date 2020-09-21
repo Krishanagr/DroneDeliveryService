@@ -4,7 +4,7 @@ In this application user can choose any customer from list displayed and check d
 
 There is an assumption for drone velocity which is 60km/h while calculating time to deliver goods.
 
-This application have 4 microservices and one eureka server application to manage microservices lifecycle.
+This application have 4 microservices and one eureka server application to manage microservices lifecycle. These microservices can be used independently or from any other services. In this application 3 microservices store, customer and drones are consuming by delivery-web-server.
 
 1.	eureka-server
   This application is to launch eureka server to register microservices. 
