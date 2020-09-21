@@ -34,6 +34,9 @@ This application is consumer of all above 3 microservices.
 Below command can be used to start delivery web server microservice which also register as eureka client:
 java -jar delivery-web-server\target\delivery-web-server -0.0.1-SNAPSHOT.jar
 
+After launching all above services successfully, this application can be accessed through below URL:
+http://localhost:4444
+
 
 This application using below technologies:
 1.	Spring Boot
